@@ -92,8 +92,4 @@ jobs:
 
       - name: Remove private key
         if: always()
-        run: rm $HOME/private-key.json
-
-      - name: Clean up
-        if: always()
-        run: rm $HOME/private-key.json
+        run: rm -f $HOME/private-key.json
